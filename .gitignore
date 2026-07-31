@@ -1,0 +1,9 @@
+# macOS metadata
+.DS_Store
+**/.DS_Store
+
+# Obsidian device-local state
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache/
+.trash/
