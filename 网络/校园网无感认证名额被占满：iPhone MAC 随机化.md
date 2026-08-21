@@ -36,8 +36,8 @@ iPhone 默认开启「私有 Wi-Fi 地址」（MAC 随机化），命中两个�
 
 ## Observations
 - [原理] 校园网无感认证按网卡 MAC 地址绑定账号，而非物理设备 #认证机制
-- [坑] iPhone 私有 Wi-Fi 地址会定期轮换 MAC，导致同一设备占用多个认证名额 #MAC随机化
-- [坑] iOS 对每个 SSID 使用独立随机 MAC，连多个网络名会各占名额 #SSID
+- [避坑] iPhone 私有 Wi-Fi 地址会定期轮换 MAC，导致同一设备占用多个认证名额 #MAC随机化
+- [避坑] iOS 对每个 SSID 使用独立随机 MAC，连多个网络名会各占名额 #SSID
 - [对比] macOS/Windows 默认不开 MAC 随机化，MAC 稳定只占一个名额 #跨平台
 - [解决] 关闭或固定校园网的私有 Wi-Fi 地址即可让 MAC 稳定 #解决方案
 
