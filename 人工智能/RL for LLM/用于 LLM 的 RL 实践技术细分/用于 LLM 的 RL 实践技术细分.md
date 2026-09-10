@@ -478,7 +478,7 @@ GRPO采用的就是这种方法，具体而言，它首先对每个样本中所�
 
 ## LLM 中的主损失函数
 
-**LLM 本质上就是一个策略网络 ****`π_θ(a|s)`**** ，即LLM根据当前文本序列，预测下一个词元的概率分布**
+**LLM 本质上就是一个策略网络 `π_θ(a|s)` ，即LLM根据当前文本序列，预测下一个词元的概率分布**
 
 由于LLM的动作空间（整个词汇表，通常有数万个词元）是巨大的离散空间，为每个“动作”计算Q值（如Q-learning所做）是完全不可行的。因此，**RL for LLM 几乎无一例外地采用Policy Gradient类的方法**。目前，业界最主流的算法就是 PPO 或其变种 GRPO 等。PPO的主损失函数是对基础Policy Gradient损失函数的一个改进，旨在解决其训练不稳定的问题，见[PPO](https://kmddxkwxdr.feishu.cn/wiki/OIzhwwzgwiqoeLkfh3wck5Dxnah)，[GRPO](https://kmddxkwxdr.feishu.cn/wiki/ZpA7we2T5ijaQAkjhfRc2KWpnYQ)。
 
@@ -522,7 +522,7 @@ $J_{\mathrm{GRPO}}(\theta)=\mathbb{E}_{[q\sim P(Q), \{o_i\}_{i=1}^G\sim \pi_{\th
 
 4. **Reward Hacking**: 奖励模型对于这些分布外的样本可能会给出不可靠的、错误的评分。策略模型可能会发现奖励模型的这些“盲点”或“漏洞”，并生成一些能够获得高分但实际上质量很差的文本。这就是所谓的**奖励模型的分布漂移**导致的**Reward Hacking**。
 
-但现在主流的方法已经转向了**“Rule-based Verifier”**，即根据一组预先定义的、客观的规则来判断LLM生成的答案是否正确，并据此给出奖励信号 `r`。相比于静态的数据集奖励模型，规则是稳定，客观和可靠的，已经能够很好地避免分布偏移和reward hacking的问题，因此KL散度也就不再被需要（见[Dr. GRPO](https://arxiv.org/abs/2503.20783)）。移除掉KL散度损失，**不仅有利于模型探索，还节省了****`π_ref`****在训练过程中所需的内存和计算**。
+但现在主流的方法已经转向了**“Rule-based Verifier”**，即根据一组预先定义的、客观的规则来判断LLM生成的答案是否正确，并据此给出奖励信号 `r`。相比于静态的数据集奖励模型，规则是稳定，客观和可靠的，已经能够很好地避免分布偏移和reward hacking的问题，因此KL散度也就不再被需要（见[Dr. GRPO](https://arxiv.org/abs/2503.20783)）。移除掉KL散度损失，**不仅有利于模型探索，还节省了**`π_ref`**在训练过程中所需的内存和计算**。
 
 ### （2）监督微调损失 (SFT Loss)
 
