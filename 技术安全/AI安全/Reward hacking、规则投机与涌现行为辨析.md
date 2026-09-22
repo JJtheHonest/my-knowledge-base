@@ -1,7 +1,7 @@
 ---
 title: Reward hacking、规则投机与涌现行为辨析
 type: note
-permalink: my-kb/notes/reward-hacking-、规则投机与涌现行为辨析
+permalink: my-kb/notes/reward-hacking-、规则投机与涌现行为辨析-1
 tags:
 - Reward-Hacking
 - Specification-Gaming

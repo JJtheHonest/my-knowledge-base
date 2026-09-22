@@ -1,7 +1,7 @@
 ---
 title: Agent 规则定义必须可执行和可验收
 type: guide
-permalink: my-kb/notes/agent-规则定义必须可执行和可验收
+permalink: my-kb/notes/agent-规则定义必须可执行和可验收-1
 tags:
 - agent
 - skill

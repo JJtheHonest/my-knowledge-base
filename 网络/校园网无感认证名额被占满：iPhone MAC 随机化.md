@@ -41,5 +41,3 @@ iPhone 默认开启「私有 Wi-Fi 地址」（MAC 随机化），命中两个�
 - [对比] macOS/Windows 默认不开 MAC 随机化，MAC 稳定只占一个名额 #跨平台
 - [解决] 关闭或固定校园网的私有 Wi-Fi 地址即可让 MAC 稳定 #解决方案
 
-## Relations
-- relates_to [[iPhone IP 地址由什么决定]]

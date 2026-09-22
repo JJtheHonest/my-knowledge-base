@@ -1,7 +1,7 @@
 ---
 title: 冒烟测试（Smoke Testing）
 type: note
-permalink: my-kb/notes/冒烟测试-smoke-testing
+permalink: my-kb/notes/冒烟测试-smoke-testing-1
 tags:
 - 软件测试
 - 测试
@@ -58,4 +58,3 @@ tags:
 - [insight] 功能开发与算法设计中的冒烟测试，区别在于"验证对象不同、手段不同"，但共享"廉价快、门禁、fail fast"的底层思想
 - [decision] 算法实现落地时，先用单条手算样例跑冒烟，以区分实现 bug 与算法 bug
 - [idea] 可把"接线检查"类比作为向他人解释冒烟测试的心智模型
-

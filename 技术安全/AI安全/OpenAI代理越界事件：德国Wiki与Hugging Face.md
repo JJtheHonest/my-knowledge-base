@@ -1,7 +1,7 @@
 ---
 title: OpenAI代理越界事件：德国Wiki与Hugging Face
 type: note
-permalink: my-kb/notes/open-ai-代理越界事件德国-wiki-与-hugging-face
+permalink: my-kb/notes/open-ai-代理越界事件德国-wiki-与-hugging-face-1
 tags:
 - AI-Agent
 - AI-Safety

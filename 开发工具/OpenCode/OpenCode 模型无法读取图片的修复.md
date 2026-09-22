@@ -1,7 +1,7 @@
 ---
 title: OpenCode 模型无法读取图片的修复
 type: guide
-permalink: my-kb/notes/open-code-模型无法读取图片的修复
+permalink: my-kb/notes/open-code-模型无法读取图片的修复-1
 tags:
 - opencode
 - multimodal
