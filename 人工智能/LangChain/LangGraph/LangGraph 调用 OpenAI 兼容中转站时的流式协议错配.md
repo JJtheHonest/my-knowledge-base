@@ -1,7 +1,7 @@
 ---
 title: LangGraph 调用 OpenAI 兼容中转站时的流式协议错配
 type: guide
-permalink: my-kb/人工智能/lang-chain-与-lang-graph/lang-graph-调用-open-ai-兼容中转站时的流式协议错配
+permalink: my-kb/人工智能/lang-chain/lang-graph/lang-graph-调用-open-ai-兼容中转站时的流式协议错配
 tags:
 - LangGraph
 - LangChain
@@ -221,6 +221,5 @@ stream=false + text/event-stream      -> 服务端协议错配
 
 ## Relations
 
-- relates_to [[LangGraph]]
-- relates_to [[LangChain]]
-- relates_to [[OpenAI API]]
+- relates_to [[LangGraph State：TypedDict 与 Pydantic 的选择]]
+- relates_to [[WorkerState、Send 与多 Schema 节点]]

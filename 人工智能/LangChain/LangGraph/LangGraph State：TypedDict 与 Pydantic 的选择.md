@@ -271,6 +271,9 @@ def classify_email(state: EmailAgentState):
 
 ## Relations
 
+- relates_to [[super-step、状态快照与并行可见性]]
+- relates_to [[WorkerState、Send 与多 Schema 节点]]
+- relates_to [[Reducer 与并行结果顺序]]
 
 ## 参考资料
 
