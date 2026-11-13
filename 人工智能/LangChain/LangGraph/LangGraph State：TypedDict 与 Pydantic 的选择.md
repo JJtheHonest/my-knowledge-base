@@ -274,6 +274,7 @@ def classify_email(state: EmailAgentState):
 - relates_to [[super-step、状态快照与并行可见性]]
 - relates_to [[WorkerState、Send 与多 Schema 节点]]
 - relates_to [[Reducer 与并行结果顺序]]
+- relates_to [[Pydantic 模型字段与普通 Python 类属性的区别]]
 
 ## 参考资料
 
